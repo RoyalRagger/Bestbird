@@ -1,0 +1,143 @@
+:root {
+    --transition-selected: .12s;
+}
+
+body {
+    margin: 0;
+    background: hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #27262A;
+}
+
+#search {
+    width: 635px;
+    background: white;
+    color: hsl(255, 5%, 16%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* section TOP */
+
+#search_top {
+    height: 54px;
+    border-bottom: 1px solid hsl(228, 33%, 97%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+}
+
+#search_top_icon {
+    height: 21px;
+    width: 21px;
+}
+
+#search_top_input {
+    margin-left: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    flex: 1;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    font-family: inherit;
+}
+
+/* section CONTENT */
+
+#search_content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 12px;
+}
+
+.content_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #5A6177;
+    margin-bottom: 8px;
+}
+
+.content_item {
+    min-height: 54px;
+    padding: 0 12px;
+    color: inherit;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    user-select: none;
+}
+
+.content_item + .content_title {
+    margin-top: 20px;
+}
+
+/* Selection */
+.content_item.selected {
+    background: hsl(220, 30%, 96%);
+}
+
+.content_item.selected .item_select {
+    opacity: 1;
+    transition: opacity var(--transition-selected);
+}
+
+.item_icon {
+    width: 20px;
+    margin-right: 18px;
+}
+
+.item_titleContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item_title {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+.item_description {
+    font-weight: normal;
+    font-size: 12px;
+    align-items: center;
+    color: #6F6F7A;
+}
+
+.item_select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #6F6F7A;
+    opacity: 0;
+}
+
+.select_text {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.select_icon {
+    margin-left: 6px
+}
+
+
+
+
