@@ -127,12 +127,6 @@
 
   /* Listener */
   document.addEventListener("keydown", keydown);
-  for (let i = 0; i < items.length; i++) {
-    items[i].onclick = function () {
-      itemClicked(i);
-    }
-  }
-
 
   /* Functions */
   function keydown(e) {
@@ -151,16 +145,6 @@
 
   function toggleSelection(i) {
     items[i].classList.toggle("selected");
-  }
-
-  function itemClicked(i) {
-    //Falls selectiertes geklickt wird, passiert nichts
-    if (selectedIndex === i) {
-      return;
-    }
-    toggleSelection(selectedIndex);
-    toggleSelection(i);
-    selectedIndex = i;
   }
 
 
