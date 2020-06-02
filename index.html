@@ -1,123 +1,169 @@
 <!DOCTYPE html>
 <html lang="de">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#ffffff">
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
-    <title>Bestbird</title>
-    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+  <title>Bestbird</title>
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 
 <div id="search">
-    <div id="search_top">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 21L15 15" stroke="#27262A" stroke-width="2"/>
-            <circle cx="9" cy="9" r="8" stroke="#27262A" stroke-width="2"/>
+  <div id="search_top">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="document.getElementById('search_top_input').focus();">
+      <path d="M21 21L15 15" stroke="#27262A" stroke-width="2"/>
+      <circle cx="9" cy="9" r="8" stroke="#27262A" stroke-width="2"/>
+    </svg>
+    <input id="search_top_input" autofocus>
+  </div>
+  <div id="search_content">
+
+    <div class="content_title">Perspektiven</div>
+
+    <div class="content_item">
+      <img src="icons/perspective-icon.svg" class="item_icon"/>
+      <div class="item_titleContainer">
+        <div class="item_title">Anmeldungen</div>
+        <div class="item_description">Wechseln zu</div>
+      </div>
+      <div class="item_select">
+        <div class="select_text">Auswählen</div>
+        <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
+          <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
         </svg>
-        <input id="search_top_input" autofocus>
+
+      </div>
     </div>
-    <div id="search_content">
 
-        <div class="content_title">Perspektiven</div>
+    <div class="content_title">Bildungsangebote</div>
 
-        <div class="content_item selected">
-            <img src="icons/perspective-icon.svg" class="item_icon"/>
-            <div class="item_titleContainer">
-                <div class="item_title">Anmeldungen</div>
-                <div class="item_description">Wechseln zu</div>
-            </div>
-            <div class="item_select">
-                <div class="select_text">Auswählen</div>
-                <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
-                    <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
-                </svg>
+    <div class="content_item">
+      <img src="icons/Bildungsangebot-icon.svg" class="item_icon"/>
+      <div class="item_titleContainer">
+        <div class="item_title">Anästhesie für Fortgeschrittene</div>
+        <div class="item_description">21.06.2020</div>
+      </div>
+      <div class="item_select">
+        <div class="select_text">Auswählen</div>
+        <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
+          <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
+        </svg>
 
-            </div>
-        </div>
-
-        <div class="content_title">Bildungsangebote</div>
-
-        <div class="content_item">
-            <img src="icons/Bildungsangebot-icon.svg" class="item_icon"/>
-            <div class="item_titleContainer">
-                <div class="item_title">Anästhesie für Fortgeschrittene</div>
-                <div class="item_description">21.06.2020</div>
-            </div>
-            <div class="item_select">
-                <div class="select_text">Auswählen</div>
-                <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
-                    <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
-                </svg>
-
-            </div>
-        </div>
-
-        <div class="content_item">
-            <img src="icons/Bildungsangebot-icon.svg" class="item_icon"/>
-            <div class="item_titleContainer">
-                <div class="item_title">Anlagenmechanik und Kundenbetreuung </div>
-                <div class="item_description">07.08.2020</div>
-            </div>
-            <div class="item_select">
-                <div class="select_text">Auswählen</div>
-                <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
-                    <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
-                </svg>
-
-            </div>
-        </div>
-
-        <div class="content_item">
-            <img src="icons/Bildungsangebot-icon.svg" class="item_icon"/>
-            <div class="item_titleContainer">
-                <div class="item_title">Anzeichen für Corona</div>
-                <div class="item_description">Heute</div>
-            </div>
-            <div class="item_select">
-                <div class="select_text">Auswählen</div>
-                <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
-                    <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
-                </svg>
-
-            </div>
-        </div>
-
-        <div class="content_title">Funktionen</div>
-
-        <div class="content_item">
-            <img src="icons/Logout-icon.svg" class="item_icon"/>
-            <div class="item_titleContainer">
-                <div class="item_title">Logout</div>
-                <div class="item_description">Melden Sie sich aus der Anwendung ab</div>
-            </div>
-            <div class="item_select">
-                <div class="select_text">Auswählen</div>
-                <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
-                    <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
-                </svg>
-
-            </div>
-        </div>
-
-
-
-
+      </div>
     </div>
+
+    <div class="content_item">
+      <img src="icons/Bildungsangebot-icon.svg" class="item_icon"/>
+      <div class="item_titleContainer">
+        <div class="item_title">Anlagenmechanik und Kundenbetreuung</div>
+        <div class="item_description">07.08.2020</div>
+      </div>
+      <div class="item_select">
+        <div class="select_text">Auswählen</div>
+        <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
+          <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
+        </svg>
+
+      </div>
+    </div>
+
+    <div class="content_item">
+      <img src="icons/Bildungsangebot-icon.svg" class="item_icon"/>
+      <div class="item_titleContainer">
+        <div class="item_title">Anzeichen für Corona</div>
+        <div class="item_description">Heute</div>
+      </div>
+      <div class="item_select">
+        <div class="select_text">Auswählen</div>
+        <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
+          <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
+        </svg>
+
+      </div>
+    </div>
+
+    <div class="content_title">Funktionen</div>
+
+    <div class="content_item">
+      <img src="icons/Logout-icon.svg" class="item_icon"/>
+      <div class="item_titleContainer">
+        <div class="item_title">Logout</div>
+        <div class="item_description">Melden Sie sich aus der Anwendung ab</div>
+      </div>
+      <div class="item_select">
+        <div class="select_text">Auswählen</div>
+        <svg class="select_icon" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5L4 1V5V9L0 5Z" fill="#6F6F7A"/>
+          <path d="M4 5H7C7.33333 5 8 4.8 8 4C8 3.2 8 0.666667 8 0" stroke="#6F6F7A" stroke-width="2"/>
+        </svg>
+
+      </div>
+    </div>
+
+
+  </div>
 </div>
 
 
 <script>
+
+  let items = document.querySelectorAll(".content_item");
+
+  let selectedIndex = 0;
+  if (items[0]) {
+    toggleSelection(0);
+  }
+
+  /* Listener */
+  document.addEventListener("keydown", keydown);
+  for (let i = 0; i < items.length; i++) {
+    items[i].onclick = function () {
+      itemClicked(i);
+    }
+  }
+
+
+  /* Functions */
+  function keydown(e) {
+    if (e.key === "ArrowUp" && selectedIndex > 0) {
+      toggleSelection(selectedIndex);
+      selectedIndex--;
+      toggleSelection(selectedIndex);
+    }
+
+    if (e.key === "ArrowDown" && selectedIndex < items.length - 1) {
+      toggleSelection(selectedIndex);
+      selectedIndex++;
+      toggleSelection(selectedIndex);
+    }
+  }
+
+  function toggleSelection(i) {
+    items[i].classList.toggle("selected");
+  }
+
+  function itemClicked(i) {
+    //Falls selectiertes geklickt wird, passiert nichts
+    if (selectedIndex === i) {
+      return;
+    }
+    toggleSelection(selectedIndex);
+    toggleSelection(i);
+    selectedIndex = i;
+  }
+
+
 </script>
 </body>
 </html>
